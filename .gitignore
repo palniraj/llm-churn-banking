@@ -1,0 +1,44 @@
+# Secrets
+.env
+
+# Raw datasets — fetch with scripts/download_data.sh (see data/README.md)
+data/*.csv
+data/*.parquet
+data/*.json
+
+# Bulk pipeline artefacts: keep the small result tables, drop embeddings,
+# parquet shards and pickled models
+data/processed/*
+!data/processed/*.csv
+*.npy
+*.npz
+*.joblib
+*.pkl
+*.pt
+*.bin
+*.safetensors
+
+# Executed notebook copies (produced by scripts/run_all.sh)
+notebooks/*.executed.ipynb
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.python-version
+*.egg-info/
+build/
+dist/
+
+# Tooling / OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.log
+logs/
+.~lock.*

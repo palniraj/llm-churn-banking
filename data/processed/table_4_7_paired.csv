@@ -1,0 +1,4 @@
+test,statistic,p_value,bh_significant
+paired t-test (per-fold F1),-1.1575,0.311466,False
+Wilcoxon signed-rank (per-fold F1),4.0,0.4375,False
+McNemar (held-out predictions),5.408,0.020045,False

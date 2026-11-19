@@ -1,0 +1,4 @@
+comparison,t,p_t,wilcoxon,p_wilcoxon,bh_significant
+Hybrid vs Traditional,-2.796,0.020848,3.0,0.009766,True
+Hybrid vs LLM-only,2.904,0.017467,4.0,0.013672,True
+LLM-only vs Traditional,-5.458,0.000402,0.0,0.001953,True

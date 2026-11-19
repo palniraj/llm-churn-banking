@@ -1,0 +1,751 @@
+profile_id,held_out_row,churn_probability,actual_exited,geography,profile,top_drivers,driver_detail,prompt,message_generic,message_llm,generation_model
+P01,852,0.997,1,Germany,"43-year-old male from Germany, credit score 850, tenure 0 years, 3 product(s), has credit card, inactive member, balance $108,509, estimated salary $184,045.","holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; customer age (43) is in a band associated with elevated churn ; current balance is $108,509",NumOfProducts=3|shap=+2.5858 ; dominant_topic=0|shap=+0.6913 ; avg_sentiment=-0.9769842028617859|shap=+0.5018 ; Age=43|shap=+0.3070 ; Balance=108508.82|shap=+0.2407,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 43-year-old male from Germany, credit score 850, tenure 0 years, 3 product(s), has credit card, inactive member, balance $108,509, estimated salary $184,045.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- customer age (43) is in a band associated with elevated churn
+- current balance is $108,509
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We appreciate the trust you have placed in us with your significant account balance and would like to ensure your current banking experience fully meets your expectations. Given your profile and the breadth of your current portfolio, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better support your long-term goals. This session is a great opportunity to explore product consolidation options or ensure you are maximizing the benefits of your existing credit card. Please let us know a convenient time this week for a brief consultation so we can provide you with the personalized service you deserve.",gemini-3.1-flash-lite
+P02,246,0.9933,1,France,"51-year-old female from France, credit score 714, tenure 4 years, 3 product(s), no credit card, inactive member, balance $88,309, estimated salary $5,863.","holds only 3 banking product(s) ; customer age (51) is in a band associated with elevated churn ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; estimated annual salary of $5,863",NumOfProducts=3|shap=+2.3476 ; Age=51|shap=+1.3907 ; dominant_topic=0|shap=+0.6988 ; avg_sentiment=-0.9754924774169922|shap=+0.4300 ; EstimatedSalary=5862.53|shap=-0.3285,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 51-year-old female from France, credit score 714, tenure 4 years, 3 product(s), no credit card, inactive member, balance $88,309, estimated salary $5,863.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- customer age (51) is in a band associated with elevated churn
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- estimated annual salary of $5,863
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate the four years you have been with us and would like to ensure our services continue to meet your evolving financial goals. Given your tenure, I would like to invite you to a complimentary financial review with one of our advisers to explore how we can better support your needs, including a review of your current product structure and credit card eligibility. Please let us know a convenient time this week for a brief conversation so we can ensure you are getting the most value from your account.",gemini-3.1-flash-lite
+P03,512,0.9924,1,Spain,"41-year-old female from Spain, credit score 724, tenure 4 years, 3 product(s), no credit card, inactive member, balance $142,880, estimated salary $185,541.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.97 ; tenure of 4 years ; aggregated complaint severity in this cluster is 3.57/5,NumOfProducts=3|shap=+2.5847 ; dominant_topic=0|shap=+1.0237 ; avg_sentiment=-0.9715424180030823|shap=+0.4658 ; Tenure=4|shap=-0.2047 ; avg_severity=3.565919876098633|shap=+0.2033,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 41-year-old female from Spain, credit score 724, tenure 4 years, 3 product(s), no credit card, inactive member, balance $142,880, estimated salary $185,541.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- tenure of 4 years
+- aggregated complaint severity in this cluster is 3.57/5
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate the trust you have placed in us over the past four years and would welcome the opportunity to ensure your banking experience better aligns with your current financial goals. Given your profile, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss personalized strategies, including potential product consolidation and eligibility for our no-fee credit card options. Please let us know a convenient time this week for a brief conversation so we can better support your financial journey.",gemini-3.1-flash-lite
+P04,153,0.9891,1,Germany,"38-year-old female from Germany, credit score 686, tenure 2 years, 3 product(s), no credit card, inactive member, balance $93,570, estimated salary $10,137.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; customer age (38) is in a band associated with elevated churn ; tenure of 2 years,NumOfProducts=3|shap=+2.3013 ; dominant_topic=0|shap=+1.2147 ; avg_sentiment=-0.9769842028617859|shap=+0.5116 ; Age=38|shap=-0.4425 ; Tenure=2|shap=-0.2993,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 38-year-old female from Germany, credit score 686, tenure 2 years, 3 product(s), no credit card, inactive member, balance $93,570, estimated salary $10,137.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- customer age (38) is in a band associated with elevated churn
+- tenure of 2 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate the trust you have placed in us over the past two years and would like to ensure your current banking setup is working as effectively as possible for your financial goals. Given your tenure, I would like to invite you to a complimentary financial review with one of our advisers to discuss product consolidation options and your eligibility for our no-fee credit card. Please let us know a convenient time this week for a brief call so we can better support your needs.",gemini-3.1-flash-lite
+P05,1475,0.9817,1,France,"55-year-old female from France, credit score 576, tenure 6 years, 3 product(s), no credit card, active member, balance $44,582, estimated salary $67,540.",holds only 3 banking product(s) ; customer age (55) is in a band associated with elevated churn ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; tenure of 6 years,NumOfProducts=3|shap=+2.5137 ; Age=55|shap=+1.1232 ; dominant_topic=0|shap=+0.7757 ; avg_sentiment=-0.9754924774169922|shap=+0.4568 ; Tenure=6|shap=-0.2207,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 55-year-old female from France, credit score 576, tenure 6 years, 3 product(s), no credit card, active member, balance $44,582, estimated salary $67,540.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- customer age (55) is in a band associated with elevated churn
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- tenure of 6 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate your six years of loyalty and are committed to ensuring your banking experience continues to meet your evolving needs. Given your tenure, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better support your long-term goals and explore potential product consolidation options. Additionally, we would be pleased to conduct an eligibility check for our no-fee credit card to further enhance your account benefits. Please let us know a convenient time this week for a brief conversation so we can prioritize your financial well-being.",gemini-3.1-flash-lite
+P06,933,0.9767,1,Germany,"42-year-old male from Germany, credit score 850, tenure 6 years, 3 product(s), no credit card, active member, balance $84,446, estimated salary $60,021.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; tenure of 6 years ; customer age (42) is in a band associated with elevated churn,NumOfProducts=3|shap=+2.5719 ; dominant_topic=0|shap=+0.8777 ; avg_sentiment=-0.9769842028617859|shap=+0.4894 ; Tenure=6|shap=-0.2596 ; Age=42|shap=+0.2319,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 42-year-old male from Germany, credit score 850, tenure 6 years, 3 product(s), no credit card, active member, balance $84,446, estimated salary $60,021.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- tenure of 6 years
+- customer age (42) is in a band associated with elevated churn
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate your six years of loyalty and are committed to ensuring your banking experience continues to meet your high standards. Given your active status and strong financial standing, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better support your long-term goals. We would also welcome the opportunity to review your account for a potential fee waiver or to assess your eligibility for our no-fee credit card options. Please let us know a convenient time this week for a brief call, or simply reply to this message to schedule your consultation.",gemini-3.1-flash-lite
+P07,358,0.9735,1,Germany,"56-year-old female from Germany, credit score 705, tenure 2 years, 1 product(s), has credit card, inactive member, balance $143,250, estimated salary $88,428.",customer age (56) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 2 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=56|shap=+1.7054 ; IsActiveMember=0|shap=+0.4845 ; Tenure=2|shap=-0.3860 ; avg_sentiment=-0.9749612808227539|shap=+0.2214 ; NumOfProducts=1|shap=+0.1888,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 56-year-old female from Germany, credit score 705, tenure 2 years, 1 product(s), has credit card, inactive member, balance $143,250, estimated salary $88,428.
+Top reasons they may churn (from SHAP):
+- customer age (56) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 2 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have noticed that you haven't utilized your account recently, and we would appreciate the opportunity to better support your financial goals. Given your tenure with us, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better tailor our services to your needs. This session is a great way to explore options such as account consolidation or a review of your current credit card benefits. Please click here to schedule a convenient time for us to connect.",gemini-3.1-flash-lite
+P08,685,0.9681,1,France,"50-year-old male from France, credit score 792, tenure 9 years, 4 product(s), has credit card, active member, balance $0, estimated salary $194,701.",holds only 4 banking product(s) ; customer age (50) is in a band associated with elevated churn ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; tenure of 9 years,NumOfProducts=4|shap=+1.9893 ; Age=50|shap=+1.1613 ; dominant_topic=0|shap=+0.8020 ; avg_sentiment=-0.9754924774169922|shap=+0.6179 ; Tenure=9|shap=-0.3512,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 50-year-old male from France, credit score 792, tenure 9 years, 4 product(s), has credit card, active member, balance $0, estimated salary $194,701.
+Top reasons they may churn (from SHAP):
+- holds only 4 banking product(s)
+- customer age (50) is in a band associated with elevated churn
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- tenure of 9 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+As a loyal partner for the past nine years, your experience is our priority, and we would appreciate the opportunity to ensure our current services continue to meet your evolving financial goals. We invite you to schedule a complimentary financial review with one of our senior advisers to explore how we can better support your needs through product consolidation or a personalized fee waiver review. Please let us know a convenient time this week for a brief conversation, or simply reply to this message to book your appointment.",gemini-3.1-flash-lite
+P09,1451,0.9645,1,Germany,"58-year-old female from Germany, credit score 622, tenure 7 years, 1 product(s), has credit card, inactive member, balance $116,922, estimated salary $120,416.",customer age (58) is in a band associated with elevated churn ; tenure of 7 years ; is currently flagged as inactive ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=58|shap=+1.5449 ; Tenure=7|shap=-0.5178 ; IsActiveMember=0|shap=+0.4463 ; avg_sentiment=-0.9749612808227539|shap=+0.2060 ; NumOfProducts=1|shap=+0.1914,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 58-year-old female from Germany, credit score 622, tenure 7 years, 1 product(s), has credit card, inactive member, balance $116,922, estimated salary $120,416.
+Top reasons they may churn (from SHAP):
+- customer age (58) is in a band associated with elevated churn
+- tenure of 7 years
+- is currently flagged as inactive
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your seven years of loyalty with us and would love to ensure our services continue to meet your evolving financial needs. Given your tenure, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss your long-term goals and explore how we can better support you. We are also happy to conduct a personalized review of your current account features and credit card eligibility to ensure you are receiving the best possible value. Please let us know your availability this week, or click here to schedule a brief consultation at your convenience.",gemini-3.1-flash-lite
+P10,1305,0.961,1,Spain,"56-year-old female from Spain, credit score 795, tenure 5 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $35,419.",customer age (56) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 5 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=56|shap=+1.7633 ; IsActiveMember=0|shap=+0.4744 ; Tenure=5|shap=-0.3297 ; avg_sentiment=-0.9713419079780579|shap=+0.2989 ; NumOfProducts=1|shap=+0.2411,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 56-year-old female from Spain, credit score 795, tenure 5 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $35,419.
+Top reasons they may churn (from SHAP):
+- customer age (56) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 5 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+As you approach your five-year anniversary with us, we would appreciate the opportunity to reconnect and ensure your banking experience is meeting your evolving needs. We invite you to schedule a complimentary financial review with one of our advisers to discuss how we can better support your goals and simplify your banking through product consolidation. Please let us know a convenient time this week for a brief conversation, or simply reply to this email to get started.",gemini-3.1-flash-lite
+P11,1344,0.9539,1,France,"43-year-old female from France, credit score 598, tenure 5 years, 3 product(s), has credit card, active member, balance $0, estimated salary $100,723.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; aggregated complaint sentiment in this product/region cluster is -0.98 ; customer age (43) is in a band associated with elevated churn ; tenure of 5 years,NumOfProducts=3|shap=+2.1136 ; dominant_topic=0|shap=+0.8396 ; avg_sentiment=-0.9754924774169922|shap=+0.5428 ; Age=43|shap=+0.4001 ; Tenure=5|shap=-0.3164,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 43-year-old female from France, credit score 598, tenure 5 years, 3 product(s), has credit card, active member, balance $0, estimated salary $100,723.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- customer age (43) is in a band associated with elevated churn
+- tenure of 5 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate your five years of loyalty and would love to help you optimize your banking experience to better suit your current financial goals. Given your tenure, I would like to invite you to a complimentary financial review with one of our advisers to discuss product consolidation and ensure you are getting the most value from your current accounts. We are also happy to conduct a fee waiver review to ensure your credit card remains as cost-effective as possible. Please click the link below to schedule a brief appointment at a time that is convenient for you.",gemini-3.1-flash-lite
+P12,19,0.9537,1,Germany,"49-year-old female from Germany, credit score 656, tenure 9 years, 1 product(s), has credit card, inactive member, balance $97,093, estimated salary $74,771.",customer age (49) is in a band associated with elevated churn ; tenure of 9 years ; is currently flagged as inactive ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=49|shap=+1.5383 ; Tenure=9|shap=-0.3514 ; IsActiveMember=0|shap=+0.2763 ; avg_sentiment=-0.9749612808227539|shap=+0.2064 ; NumOfProducts=1|shap=+0.2039,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 49-year-old female from Germany, credit score 656, tenure 9 years, 1 product(s), has credit card, inactive member, balance $97,093, estimated salary $74,771.
+Top reasons they may churn (from SHAP):
+- customer age (49) is in a band associated with elevated churn
+- tenure of 9 years
+- is currently flagged as inactive
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your loyalty over the past nine years and would love the opportunity to better support your financial goals. Given your long-standing relationship with us, I would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current account is best aligned with your needs. We are also happy to conduct a fee waiver review and discuss options for consolidating your banking services to provide you with greater convenience. Please let us know a convenient time this week for a brief call so we can assist you further.",gemini-3.1-flash-lite
+P13,1478,0.9504,1,France,"52-year-old male from France, credit score 672, tenure 8 years, 1 product(s), no credit card, inactive member, balance $170,009, estimated salary $56,407.",customer age (52) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 8 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=52|shap=+1.6784 ; IsActiveMember=0|shap=+0.4541 ; Tenure=8|shap=-0.3721 ; avg_sentiment=-0.9745224714279175|shap=+0.2439 ; NumOfProducts=1|shap=+0.1981,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 52-year-old male from France, credit score 672, tenure 8 years, 1 product(s), no credit card, inactive member, balance $170,009, estimated salary $56,407.
+Top reasons they may churn (from SHAP):
+- customer age (52) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 8 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Client,
+
+As a loyal customer of eight years, your long-standing relationship with us is truly appreciated, and we would like to ensure your banking experience is perfectly aligned with your current financial goals. Given your tenure, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better support your needs, including a review of your current fee structure and eligibility for additional account benefits. Please let us know a convenient time this week for a brief call, or simply reply to this email to schedule your consultation.",gemini-3.1-flash-lite
+P14,48,0.9475,1,Spain,"56-year-old male from Spain, credit score 683, tenure 7 years, 3 product(s), no credit card, inactive member, balance $50,911, estimated salary $97,629.",customer age (56) is in a band associated with elevated churn ; holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; tenure of 7 years ; is currently flagged as inactive,Age=56|shap=+1.8303 ; NumOfProducts=3|shap=+1.7280 ; dominant_topic=0|shap=+0.4340 ; Tenure=7|shap=-0.3687 ; IsActiveMember=0|shap=+0.3510,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 56-year-old male from Spain, credit score 683, tenure 7 years, 3 product(s), no credit card, inactive member, balance $50,911, estimated salary $97,629.
+Top reasons they may churn (from SHAP):
+- customer age (56) is in a band associated with elevated churn
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- tenure of 7 years
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+We have truly appreciated your seven years of loyalty with us and would love to help you make the most of your current banking relationship. Given your tenure, I would like to invite you to a complimentary financial review with one of our advisers to ensure your accounts are working efficiently for your long-term goals. We are also happy to conduct a fee waiver review and check your eligibility for our no-fee credit card options to better support your financial needs. Please let us know a convenient time this week for a brief call, or visit us at your local branch to reconnect.",gemini-3.1-flash-lite
+P15,1060,0.9426,1,Germany,"46-year-old female from Germany, credit score 706, tenure 4 years, 1 product(s), has credit card, inactive member, balance $105,215, estimated salary $108,700.","customer age (46) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.97 ; is currently flagged as inactive ; holds only 1 banking product(s) ; current balance is $105,215",Age=46|shap=+0.7742 ; avg_sentiment=-0.9749612808227539|shap=+0.2467 ; IsActiveMember=0|shap=+0.2137 ; NumOfProducts=1|shap=+0.1916 ; Balance=105214.58|shap=+0.1193,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 46-year-old female from Germany, credit score 706, tenure 4 years, 1 product(s), has credit card, inactive member, balance $105,215, estimated salary $108,700.
+Top reasons they may churn (from SHAP):
+- customer age (46) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- is currently flagged as inactive
+- holds only 1 banking product(s)
+- current balance is $105,215
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated having you with us over the past four years and would love to ensure your banking experience is perfectly aligned with your current financial goals. Given your tenure and significant account balance, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better support your needs. We are also happy to conduct a fee waiver review and explore eligibility for our no-fee credit card options to add more value to your account. Please let us know a convenient time this week for a brief call, or simply reply to this message to schedule your consultation.",gemini-3.1-flash-lite
+P16,1486,0.9406,0,France,"52-year-old female from France, credit score 649, tenure 8 years, 1 product(s), has credit card, inactive member, balance $49,114, estimated salary $41,858.",customer age (52) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 8 years ; holds only 1 banking product(s) ; aggregated complaint sentiment in this product/region cluster is -0.97,Age=52|shap=+1.8562 ; IsActiveMember=0|shap=+0.4733 ; Tenure=8|shap=-0.4465 ; NumOfProducts=1|shap=+0.1980 ; avg_sentiment=-0.9745224714279175|shap=+0.1948,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 52-year-old female from France, credit score 649, tenure 8 years, 1 product(s), has credit card, inactive member, balance $49,114, estimated salary $41,858.
+Top reasons they may churn (from SHAP):
+- customer age (52) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 8 years
+- holds only 1 banking product(s)
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your loyalty over the past eight years and would love to ensure our services continue to meet your evolving financial goals. As a long-standing member, we would like to invite you to a complimentary financial review with one of our expert advisers to discuss how we can better support your needs. We are also happy to conduct a fee waiver review and explore options to consolidate your banking to ensure you are getting the most value from your account. Please reply to this email or call our dedicated support line to schedule your personal consultation at your earliest convenience.",gemini-3.1-flash-lite
+P17,820,0.9395,1,Germany,"47-year-old female from Germany, credit score 537, tenure 6 years, 1 product(s), has credit card, inactive member, balance $103,163, estimated salary $16,260.",customer age (47) is in a band associated with elevated churn ; tenure of 6 years ; is currently flagged as inactive ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=47|shap=+1.2382 ; Tenure=6|shap=-0.3070 ; IsActiveMember=0|shap=+0.2624 ; avg_sentiment=-0.9749612808227539|shap=+0.2439 ; NumOfProducts=1|shap=+0.1937,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 47-year-old female from Germany, credit score 537, tenure 6 years, 1 product(s), has credit card, inactive member, balance $103,163, estimated salary $16,260.
+Top reasons they may churn (from SHAP):
+- customer age (47) is in a band associated with elevated churn
+- tenure of 6 years
+- is currently flagged as inactive
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your six years of loyalty with us and would love to ensure your banking experience is meeting your current needs. Given your tenure, we would like to invite you to a complimentary financial review with one of our advisers to discuss how we can better support your long-term goals. We are also happy to conduct a fee waiver review and explore options to optimize your existing account profile. Please reply to this email or call our dedicated service line at your earliest convenience to schedule a time that works best for you.",gemini-3.1-flash-lite
+P18,969,0.9374,1,Germany,"54-year-old male from Germany, credit score 793, tenure 2 years, 1 product(s), no credit card, inactive member, balance $128,966, estimated salary $18,633.",customer age (54) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 2 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=54|shap=+1.8003 ; IsActiveMember=0|shap=+0.4144 ; Tenure=2|shap=-0.3527 ; avg_sentiment=-0.9749612808227539|shap=+0.3215 ; NumOfProducts=1|shap=+0.2013,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 54-year-old male from Germany, credit score 793, tenure 2 years, 1 product(s), no credit card, inactive member, balance $128,966, estimated salary $18,633.
+Top reasons they may churn (from SHAP):
+- customer age (54) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 2 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Mr. [Customer Last Name],
+
+We have truly valued having you with us over the past two years and would like to ensure you are getting the most out of your banking experience. As a loyal client, I would like to invite you to a complimentary financial review with one of our expert advisers to discuss your long-term goals and explore how we can better support your financial needs. We are also happy to conduct an eligibility check for our no-fee credit card options or review your current account features to ensure they remain perfectly aligned with your preferences. Please let us know a convenient time this week for a brief call, or simply reply to this email to schedule your appointment.",gemini-3.1-flash-lite
+P19,1377,0.9365,1,France,"61-year-old male from France, credit score 620, tenure 5 years, 1 product(s), no credit card, inactive member, balance $0, estimated salary $31,642.",customer age (61) is in a band associated with elevated churn ; is currently flagged as inactive ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; tenure of 5 years,Age=61|shap=+1.6619 ; IsActiveMember=0|shap=+0.5021 ; avg_sentiment=-0.9745224714279175|shap=+0.3532 ; NumOfProducts=1|shap=+0.2742 ; Tenure=5|shap=-0.2706,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 61-year-old male from France, credit score 620, tenure 5 years, 1 product(s), no credit card, inactive member, balance $0, estimated salary $31,642.
+Top reasons they may churn (from SHAP):
+- customer age (61) is in a band associated with elevated churn
+- is currently flagged as inactive
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- tenure of 5 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+We have truly appreciated having you with us over the past five years and would love to ensure our services are better meeting your current needs. We invite you to schedule a complimentary financial review with one of our advisers to discuss how we can better support your goals through personalized product consolidation or a fee waiver assessment. Please click here or visit your local branch to book your consultation at a time that works best for you.",gemini-3.1-flash-lite
+P20,347,0.9352,1,Spain,"45-year-old female from Spain, credit score 505, tenure 9 years, 3 product(s), has credit card, inactive member, balance $131,355, estimated salary $195,395.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; customer age (45) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.97 ; tenure of 9 years,NumOfProducts=3|shap=+2.6485 ; dominant_topic=0|shap=+0.6507 ; Age=45|shap=+0.4076 ; avg_sentiment=-0.9715424180030823|shap=+0.3423 ; Tenure=9|shap=-0.3312,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 45-year-old female from Spain, credit score 505, tenure 9 years, 3 product(s), has credit card, inactive member, balance $131,355, estimated salary $195,395.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- customer age (45) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- tenure of 9 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate your nine years of loyalty and would like to ensure that your current banking arrangements continue to support your financial goals effectively. Given your status, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss potential product consolidation and eligibility for a no-fee credit card. Please let us know a convenient time this week for a brief conversation so we can ensure you are receiving the maximum value from your accounts.",gemini-3.1-flash-lite
+P21,1477,0.9335,1,France,"52-year-old male from France, credit score 551, tenure 1 years, 1 product(s), no credit card, inactive member, balance $0, estimated salary $63,585.",customer age (52) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 1 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=52|shap=+1.9423 ; IsActiveMember=0|shap=+0.4016 ; Tenure=1|shap=-0.2706 ; avg_sentiment=-0.9745224714279175|shap=+0.2631 ; NumOfProducts=1|shap=+0.2475,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 52-year-old male from France, credit score 551, tenure 1 years, 1 product(s), no credit card, inactive member, balance $0, estimated salary $63,585.
+Top reasons they may churn (from SHAP):
+- customer age (52) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 1 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have noticed that you haven't used your account recently, and we would appreciate the opportunity to learn how we can better support your financial goals. As a gesture of our commitment to your experience, I would like to invite you to a complimentary financial review with one of our senior advisers to explore how we can better tailor our services to your needs. We are also happy to conduct an eligibility check for a no-fee credit card or discuss options for consolidating your banking products to provide you with more value. Please reply to this email or call us at your earliest convenience to schedule a time that works best for you.",gemini-3.1-flash-lite
+P22,655,0.9227,0,Germany,"47-year-old male from Germany, credit score 713, tenure 1 years, 1 product(s), has credit card, inactive member, balance $95,995, estimated salary $197,529.","customer age (47) is in a band associated with elevated churn ; estimated annual salary of $197,529 ; is currently flagged as inactive ; tenure of 1 years ; aggregated complaint sentiment in this product/region cluster is -0.97",Age=47|shap=+1.4217 ; EstimatedSalary=197529.23|shap=-0.3943 ; IsActiveMember=0|shap=+0.3353 ; Tenure=1|shap=-0.2250 ; avg_sentiment=-0.9749612808227539|shap=+0.2068,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 47-year-old male from Germany, credit score 713, tenure 1 years, 1 product(s), has credit card, inactive member, balance $95,995, estimated salary $197,529.
+Top reasons they may churn (from SHAP):
+- customer age (47) is in a band associated with elevated churn
+- estimated annual salary of $197,529
+- is currently flagged as inactive
+- tenure of 1 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have noticed that you haven’t utilized your account recently, and we would appreciate the opportunity to learn how we can better support your financial goals. Given your profile, I would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current banking setup is working optimally for you. We are also happy to conduct a fee waiver review to ensure you are receiving the most value from your existing credit card. Please let us know a convenient time this week for a brief conversation so we can assist you further.",gemini-3.1-flash-lite
+P23,710,0.9159,0,France,"66-year-old female from France, credit score 439, tenure 9 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $65,536.",customer age (66) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 9 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=66|shap=+0.9660 ; IsActiveMember=0|shap=+0.7440 ; Tenure=9|shap=-0.3314 ; avg_sentiment=-0.9745224714279175|shap=+0.2723 ; NumOfProducts=1|shap=+0.2445,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 66-year-old female from France, credit score 439, tenure 9 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $65,536.
+Top reasons they may churn (from SHAP):
+- customer age (66) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 9 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated having you with us for the past nine years and would love to help you get the most out of your banking experience. As you navigate your financial goals, I would like to invite you to a complimentary financial review with one of our dedicated advisers to ensure your current account remains perfectly aligned with your needs. We are also happy to conduct a no-fee credit card eligibility check to see if we can better support your lifestyle. Please reply to this email or call our office at your earliest convenience to schedule a time that works best for you.",gemini-3.1-flash-lite
+P24,1136,0.9135,1,Germany,"65-year-old female from Germany, credit score 635, tenure 5 years, 1 product(s), has credit card, inactive member, balance $117,326, estimated salary $155,800.",customer age (65) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 5 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=65|shap=+1.0622 ; IsActiveMember=0|shap=+0.6842 ; Tenure=5|shap=-0.2931 ; avg_sentiment=-0.9749612808227539|shap=+0.2125 ; NumOfProducts=1|shap=+0.1971,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 65-year-old female from Germany, credit score 635, tenure 5 years, 1 product(s), has credit card, inactive member, balance $117,326, estimated salary $155,800.
+Top reasons they may churn (from SHAP):
+- customer age (65) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 5 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Ms. Müller,
+
+As a valued client of five years, we would like to ensure your banking experience continues to meet your evolving needs as you approach this next chapter. We invite you to schedule a complimentary financial review with one of our senior advisers to discuss your long-term goals and ensure your current account remains perfectly aligned with your lifestyle. Additionally, we would be pleased to conduct a review of your credit card and account terms to explore potential fee-waiver eligibility. Please reply to this email or call our dedicated priority line at your earliest convenience to book your consultation.",gemini-3.1-flash-lite
+P25,672,0.905,1,Germany,"44-year-old female from Germany, credit score 742, tenure 8 years, 1 product(s), no credit card, active member, balance $107,926, estimated salary $17,375.",customer age (44) is in a band associated with elevated churn ; tenure of 8 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; aggregated complaint severity in this cluster is 3.48/5,Age=44|shap=+0.4684 ; Tenure=8|shap=-0.3692 ; avg_sentiment=-0.9749612808227539|shap=+0.2481 ; NumOfProducts=1|shap=+0.2070 ; avg_severity=3.4751169681549072|shap=+0.1945,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 44-year-old female from Germany, credit score 742, tenure 8 years, 1 product(s), no credit card, active member, balance $107,926, estimated salary $17,375.
+Top reasons they may churn (from SHAP):
+- customer age (44) is in a band associated with elevated churn
+- tenure of 8 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- aggregated complaint severity in this cluster is 3.48/5
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate the trust you have placed in us over the past eight years and would like to ensure your banking experience remains exceptional. Given your loyalty, I would like to invite you to a complimentary financial review with one of our advisers to explore how we can better support your long-term goals. We are also happy to conduct an eligibility check for a no-fee credit card or review your account for potential fee waivers to better suit your needs. Please let us know a convenient time this week for a brief call to discuss these options.",gemini-3.1-flash-lite
+P26,126,0.896,1,Germany,"59-year-old male from Germany, credit score 727, tenure 5 years, 1 product(s), has credit card, inactive member, balance $152,581, estimated salary $71,830.",customer age (59) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 5 years ; holds only 1 banking product(s) ; aggregated complaint sentiment in this product/region cluster is -0.97,Age=59|shap=+1.4660 ; IsActiveMember=0|shap=+0.6255 ; Tenure=5|shap=-0.3189 ; NumOfProducts=1|shap=+0.1912 ; avg_sentiment=-0.9749612808227539|shap=+0.1893,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 59-year-old male from Germany, credit score 727, tenure 5 years, 1 product(s), has credit card, inactive member, balance $152,581, estimated salary $71,830.
+Top reasons they may churn (from SHAP):
+- customer age (59) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 5 years
+- holds only 1 banking product(s)
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+As you reach your five-year milestone with us, we would like to ensure your banking experience is perfectly aligned with your current financial goals. We invite you to schedule a complimentary financial review with one of our expert advisers, where we can also explore options such as a fee waiver review or credit card eligibility enhancements to better serve your needs. Your partnership is important to us, and we are committed to providing you with the personalized support you deserve. Please click here to book your consultation at your earliest convenience.",gemini-3.1-flash-lite
+P27,925,0.8836,0,Spain,"47-year-old female from Spain, credit score 778, tenure 6 years, 2 product(s), has credit card, inactive member, balance $127,299, estimated salary $124,695.","customer age (47) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.98 ; current balance is $127,299 ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; is currently flagged as inactive",Age=47|shap=+1.4117 ; avg_sentiment=-0.9818065166473389|shap=-1.0586 ; Balance=127299.34|shap=+0.3853 ; dominant_topic=0|shap=+0.3132 ; IsActiveMember=0|shap=+0.2942,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 47-year-old female from Spain, credit score 778, tenure 6 years, 2 product(s), has credit card, inactive member, balance $127,299, estimated salary $124,695.
+Top reasons they may churn (from SHAP):
+- customer age (47) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- current balance is $127,299
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your six years of loyalty with us, and we would welcome the opportunity to ensure your banking experience continues to meet your expectations. Given your tenure and your significant relationship with the bank, I would like to invite you to a complimentary financial review with one of our senior advisers to help you optimize your portfolio. Please let us know a convenient time this week for a brief conversation so we can discuss how to better support your current financial goals.",gemini-3.1-flash-lite
+P28,146,0.871,0,Germany,"49-year-old female from Germany, credit score 513, tenure 5 years, 1 product(s), has credit card, inactive member, balance $171,601, estimated salary $126,224.","customer age (49) is in a band associated with elevated churn ; tenure of 5 years ; current balance is $171,601 ; is currently flagged as inactive ; holds only 1 banking product(s)",Age=49|shap=+1.4033 ; Tenure=5|shap=-0.3012 ; Balance=171601.27|shap=-0.2826 ; IsActiveMember=0|shap=+0.2293 ; NumOfProducts=1|shap=+0.2091,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 49-year-old female from Germany, credit score 513, tenure 5 years, 1 product(s), has credit card, inactive member, balance $171,601, estimated salary $126,224.
+Top reasons they may churn (from SHAP):
+- customer age (49) is in a band associated with elevated churn
+- tenure of 5 years
+- current balance is $171,601
+- is currently flagged as inactive
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+We have noticed that you haven’t utilized your account recently, and we would appreciate the opportunity to better support your financial journey after five years with us. Given your tenure, we would like to offer you a complimentary financial review with one of our advisers to ensure your current banking setup is working optimally for your needs. We are also happy to conduct a fee waiver review and explore product consolidation options to better serve you. Please reply to this message or call our dedicated support team at your earliest convenience to schedule a brief consultation.",gemini-3.1-flash-lite
+P29,405,0.8642,1,France,"48-year-old female from France, credit score 603, tenure 5 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $100,479.",customer age (48) is in a band associated with elevated churn ; tenure of 5 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; is currently flagged as inactive,Age=48|shap=+1.2836 ; Tenure=5|shap=-0.3361 ; avg_sentiment=-0.9745224714279175|shap=+0.3192 ; NumOfProducts=1|shap=+0.2468 ; IsActiveMember=0|shap=+0.2284,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 48-year-old female from France, credit score 603, tenure 5 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $100,479.
+Top reasons they may churn (from SHAP):
+- customer age (48) is in a band associated with elevated churn
+- tenure of 5 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated having you with us over the past five years and would love the opportunity to better support your current financial goals. Given your profile, I would like to invite you to a complimentary financial review with one of our expert advisers to explore how we can better tailor our services to your needs. This session is a great way to discuss potential fee waivers or credit card options that may better align with your lifestyle. Please click the link below or reply to this email to schedule a convenient time for your consultation.",gemini-3.1-flash-lite
+P30,397,0.8614,1,France,"55-year-old female from France, credit score 545, tenure 5 years, 1 product(s), no credit card, inactive member, balance $0, estimated salary $10,035.","customer age (55) is in a band associated with elevated churn ; estimated annual salary of $10,035 ; is currently flagged as inactive ; tenure of 5 years ; aggregated complaint sentiment in this product/region cluster is -0.97",Age=55|shap=+2.0084 ; EstimatedSalary=10034.77|shap=-0.3549 ; IsActiveMember=0|shap=+0.3244 ; Tenure=5|shap=-0.3223 ; avg_sentiment=-0.9745224714279175|shap=+0.2854,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 55-year-old female from France, credit score 545, tenure 5 years, 1 product(s), no credit card, inactive member, balance $0, estimated salary $10,035.
+Top reasons they may churn (from SHAP):
+- customer age (55) is in a band associated with elevated churn
+- estimated annual salary of $10,035
+- is currently flagged as inactive
+- tenure of 5 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly valued your five-year relationship with us and would love to help you get more out of your banking experience. Given your current status, I would like to invite you to a complimentary financial review with one of our advisers to discuss your goals and explore options such as a fee waiver review or credit card eligibility. Please let us know a convenient time this week for a brief conversation so we can better support your financial needs.",gemini-3.1-flash-lite
+P31,1342,0.8522,1,France,"45-year-old male from France, credit score 623, tenure 0 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $196,534.",customer age (45) is in a band associated with elevated churn ; tenure of 0 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; is currently flagged as inactive,Age=45|shap=+1.0691 ; Tenure=0|shap=-0.3422 ; avg_sentiment=-0.9745224714279175|shap=+0.3300 ; NumOfProducts=1|shap=+0.2773 ; IsActiveMember=0|shap=+0.2170,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 45-year-old male from France, credit score 623, tenure 0 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $196,534.
+Top reasons they may churn (from SHAP):
+- customer age (45) is in a band associated with elevated churn
+- tenure of 0 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We noticed you haven't had the opportunity to utilize your account recently, and we would welcome the chance to better support your financial goals. Given your profile, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better align our services with your needs. We are also happy to conduct a fee waiver review or explore options to consolidate your banking to ensure you are getting the most value from your membership. Please click here to schedule a brief consultation at your earliest convenience.",gemini-3.1-flash-lite
+P32,1340,0.8499,1,Spain,"46-year-old female from Spain, credit score 651, tenure 4 years, 1 product(s), has credit card, inactive member, balance $89,743, estimated salary $156,426.",customer age (46) is in a band associated with elevated churn ; is currently flagged as inactive ; holds only 1 banking product(s) ; aggregated complaint sentiment in this product/region cluster is -0.97 ; tenure of 4 years,Age=46|shap=+0.7950 ; IsActiveMember=0|shap=+0.2791 ; NumOfProducts=1|shap=+0.1883 ; avg_sentiment=-0.9713419079780579|shap=+0.1766 ; Tenure=4|shap=-0.1627,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 46-year-old female from Spain, credit score 651, tenure 4 years, 1 product(s), has credit card, inactive member, balance $89,743, estimated salary $156,426.
+Top reasons they may churn (from SHAP):
+- customer age (46) is in a band associated with elevated churn
+- is currently flagged as inactive
+- holds only 1 banking product(s)
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- tenure of 4 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated having you with us over the past four years and would love to ensure your banking experience is perfectly aligned with your current financial goals. Given your significant balance, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better support your wealth management needs. This session is a great opportunity to explore potential product consolidation or fee waiver options tailored specifically to your profile. Please click here to schedule a brief conversation at a time that is most convenient for you.",gemini-3.1-flash-lite
+P33,179,0.8405,1,Germany,"45-year-old female from Germany, credit score 550, tenure 8 years, 1 product(s), no credit card, inactive member, balance $111,258, estimated salary $97,623.",customer age (45) is in a band associated with elevated churn ; tenure of 8 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; is currently flagged as inactive,Age=45|shap=+0.8275 ; Tenure=8|shap=-0.3193 ; avg_sentiment=-0.9749612808227539|shap=+0.2405 ; NumOfProducts=1|shap=+0.1968 ; IsActiveMember=0|shap=+0.1623,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 45-year-old female from Germany, credit score 550, tenure 8 years, 1 product(s), no credit card, inactive member, balance $111,258, estimated salary $97,623.
+Top reasons they may churn (from SHAP):
+- customer age (45) is in a band associated with elevated churn
+- tenure of 8 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your eight years of loyalty with us and would love the opportunity to better support your financial goals. Given your significant history with the bank, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better serve your needs. We are also happy to conduct a fee waiver review and check your eligibility for our no-fee credit card options to ensure you are getting the most value from your account. Please let us know a convenient time this week for a brief call so we can assist you further.",gemini-3.1-flash-lite
+P34,846,0.8341,1,France,"46-year-old male from France, credit score 614, tenure 4 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $74,380.",customer age (46) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; is currently flagged as inactive ; account balance is zero,Age=46|shap=+0.7776 ; avg_sentiment=-0.9745224714279175|shap=+0.3024 ; NumOfProducts=1|shap=+0.2614 ; IsActiveMember=0|shap=+0.1976 ; Balance=0.0|shap=-0.0722,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 46-year-old male from France, credit score 614, tenure 4 years, 1 product(s), has credit card, inactive member, balance $0, estimated salary $74,380.
+Top reasons they may churn (from SHAP):
+- customer age (46) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- is currently flagged as inactive
+- account balance is zero
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have noticed that you haven’t utilized your account recently, and we would appreciate the opportunity to learn how we can better support your financial goals. As a loyal customer of four years, you are eligible for a complimentary financial review with one of our advisers to discuss how our services can be better tailored to your needs. Please let us know if you would like to schedule a brief consultation so we can ensure you are getting the most value from your membership.",gemini-3.1-flash-lite
+P35,105,0.8309,1,Germany,"46-year-old female from Germany, credit score 655, tenure 7 years, 1 product(s), has credit card, inactive member, balance $137,145, estimated salary $115,146.",customer age (46) is in a band associated with elevated churn ; tenure of 7 years ; aggregated complaint sentiment in this product/region cluster is -0.97 ; is currently flagged as inactive ; holds only 1 banking product(s),Age=46|shap=+0.8046 ; Tenure=7|shap=-0.4332 ; avg_sentiment=-0.9749612808227539|shap=+0.2414 ; IsActiveMember=0|shap=+0.2182 ; NumOfProducts=1|shap=+0.1870,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 46-year-old female from Germany, credit score 655, tenure 7 years, 1 product(s), has credit card, inactive member, balance $137,145, estimated salary $115,146.
+Top reasons they may churn (from SHAP):
+- customer age (46) is in a band associated with elevated churn
+- tenure of 7 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- is currently flagged as inactive
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+As a loyal member of our bank for the past seven years, your relationship is very important to us, and we would appreciate the opportunity to better support your financial goals. We would like to invite you to a complimentary financial review with one of our expert advisers to ensure your current banking setup is working optimally for your needs. This session is a great chance to discuss potential fee waivers and explore how we can provide more value to your banking experience. Please reply to this message or call our office at your earliest convenience to schedule your consultation.",gemini-3.1-flash-lite
+P36,1157,0.8165,0,Germany,"62-year-old female from Germany, credit score 555, tenure 10 years, 1 product(s), no credit card, active member, balance $114,823, estimated salary $8,444.",customer age (62) is in a band associated with elevated churn ; tenure of 10 years ; is an active member ; aggregated complaint severity in this cluster is 3.48/5 ; holds only 1 banking product(s),Age=62|shap=+1.0581 ; Tenure=10|shap=-0.6444 ; IsActiveMember=1|shap=-0.3727 ; avg_severity=3.4751169681549072|shap=+0.2018 ; NumOfProducts=1|shap=+0.1995,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 62-year-old female from Germany, credit score 555, tenure 10 years, 1 product(s), no credit card, active member, balance $114,823, estimated salary $8,444.
+Top reasons they may churn (from SHAP):
+- customer age (62) is in a band associated with elevated churn
+- tenure of 10 years
+- is an active member
+- aggregated complaint severity in this cluster is 3.48/5
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate your ten years of loyalty and your active partnership with us. As you look toward your future financial goals, we would like to invite you to a complimentary review with one of our personal advisers to ensure your current banking setup is working optimally for you. During this session, we can also explore options such as a fee waiver review or credit card eligibility to better support your needs. Please contact us at your earliest convenience or visit your local branch to schedule your consultation.",gemini-3.1-flash-lite
+P37,1181,0.7983,1,Germany,"47-year-old female from Germany, credit score 604, tenure 4 years, 1 product(s), no credit card, active member, balance $118,908, estimated salary $47,777.",customer age (47) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.97 ; is an active member ; holds only 1 banking product(s) ; aggregated complaint severity in this cluster is 3.48/5,Age=47|shap=+1.0641 ; avg_sentiment=-0.9749612808227539|shap=+0.2255 ; IsActiveMember=1|shap=-0.2129 ; NumOfProducts=1|shap=+0.1967 ; avg_severity=3.4751169681549072|shap=+0.1694,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 47-year-old female from Germany, credit score 604, tenure 4 years, 1 product(s), no credit card, active member, balance $118,908, estimated salary $47,777.
+Top reasons they may churn (from SHAP):
+- customer age (47) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- is an active member
+- holds only 1 banking product(s)
+- aggregated complaint severity in this cluster is 3.48/5
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+We truly appreciate the trust you have placed in us over the past four years and would like to ensure you are getting the most value from your banking experience. As an active member, you may be eligible for a complimentary financial review with one of our advisers to discuss how our additional services, such as our no-fee credit card options, could better support your long-term goals. Please let us know a convenient time this week for a brief conversation so we can help you optimize your account and simplify your financial management.",gemini-3.1-flash-lite
+P38,1317,0.7679,0,France,"45-year-old male from France, credit score 674, tenure 7 years, 1 product(s), has credit card, inactive member, balance $142,072, estimated salary $37,013.",customer age (45) is in a band associated with elevated churn ; tenure of 7 years ; is currently flagged as inactive ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=45|shap=+0.8943 ; Tenure=7|shap=-0.3914 ; IsActiveMember=0|shap=+0.2903 ; avg_sentiment=-0.9745224714279175|shap=+0.2121 ; NumOfProducts=1|shap=+0.2038,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 45-year-old male from France, credit score 674, tenure 7 years, 1 product(s), has credit card, inactive member, balance $142,072, estimated salary $37,013.
+Top reasons they may churn (from SHAP):
+- customer age (45) is in a band associated with elevated churn
+- tenure of 7 years
+- is currently flagged as inactive
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your seven years of loyalty, and we would welcome the opportunity to better support your financial goals. Given your significant balance, I would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current banking setup is working as efficiently as possible for you. We are also happy to conduct a no-fee credit card eligibility check or review your account for potential fee waivers to add more value to your experience. Please reply to this email or call our priority line at your earliest convenience to schedule a brief consultation.",gemini-3.1-flash-lite
+P39,362,0.7672,0,Germany,"48-year-old female from Germany, credit score 778, tenure 3 years, 2 product(s), has credit card, inactive member, balance $102,291, estimated salary $182,691.","aggregated complaint sentiment in this product/region cluster is -0.99 ; customer age (48) is in a band associated with elevated churn ; current balance is $102,291 ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; tenure of 3 years",avg_sentiment=-0.9856584668159485|shap=-1.5084 ; Age=48|shap=+1.2285 ; Balance=102290.56|shap=+0.2303 ; dominant_topic=0|shap=+0.2148 ; Tenure=3|shap=-0.1769,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 48-year-old female from Germany, credit score 778, tenure 3 years, 2 product(s), has credit card, inactive member, balance $102,291, estimated salary $182,691.
+Top reasons they may churn (from SHAP):
+- aggregated complaint sentiment in this product/region cluster is -0.99
+- customer age (48) is in a band associated with elevated churn
+- current balance is $102,291
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- tenure of 3 years
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate your three-year relationship with us and would like to ensure your current banking arrangements continue to support your financial goals effectively. Given your status as a long-standing client, I would like to invite you to a complimentary financial review with one of our senior advisers to discuss how we can better optimize your accounts and provide a personalized fee waiver assessment. Please let us know a convenient time this week for a brief conversation so we can ensure you are receiving the full benefit of your membership.",gemini-3.1-flash-lite
+P40,112,0.7632,0,Germany,"52-year-old female from Germany, credit score 711, tenure 8 years, 1 product(s), no credit card, active member, balance $145,263, estimated salary $131,473.",customer age (52) is in a band associated with elevated churn ; tenure of 8 years ; is an active member ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s),Age=52|shap=+1.2142 ; Tenure=8|shap=-0.3974 ; IsActiveMember=1|shap=-0.2756 ; avg_sentiment=-0.9749612808227539|shap=+0.2161 ; NumOfProducts=1|shap=+0.1955,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 52-year-old female from Germany, credit score 711, tenure 8 years, 1 product(s), no credit card, active member, balance $145,263, estimated salary $131,473.
+Top reasons they may churn (from SHAP):
+- customer age (52) is in a band associated with elevated churn
+- tenure of 8 years
+- is an active member
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+We truly appreciate your eight years of loyalty and your active engagement with us. Given your tenure and evolving financial goals, I would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current banking setup is still working optimally for you. During this session, we can also explore potential product consolidation options or verify your eligibility for a no-fee credit card to better support your needs. Please let us know a convenient time this week for a brief call so we can provide you with the personalized service you deserve.",gemini-3.1-flash-lite
+P41,1135,0.7445,1,Germany,"68-year-old male from Germany, credit score 758, tenure 6 years, 1 product(s), has credit card, inactive member, balance $112,596, estimated salary $35,865.",is currently flagged as inactive ; tenure of 6 years ; holds only 1 banking product(s) ; aggregated complaint sentiment in this product/region cluster is -0.97 ; customer age (68) is in a band associated with elevated churn,IsActiveMember=0|shap=+0.6337 ; Tenure=6|shap=-0.3221 ; NumOfProducts=1|shap=+0.1978 ; avg_sentiment=-0.9749612808227539|shap=+0.1816 ; Age=68|shap=+0.1260,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 68-year-old male from Germany, credit score 758, tenure 6 years, 1 product(s), has credit card, inactive member, balance $112,596, estimated salary $35,865.
+Top reasons they may churn (from SHAP):
+- is currently flagged as inactive
+- tenure of 6 years
+- holds only 1 banking product(s)
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- customer age (68) is in a band associated with elevated churn
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+As a loyal member of our bank for the past six years, your long-standing relationship is very important to us. We would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current banking arrangements continue to best support your long-term goals. We are also happy to conduct a fee waiver review and explore options to better align your credit card with your personal needs. Please contact your local branch or reply to this message to schedule a convenient time for your consultation.",gemini-3.1-flash-lite
+P42,231,0.728,1,Spain,"56-year-old female from Spain, credit score 585, tenure 1 years, 1 product(s), has credit card, inactive member, balance $128,473, estimated salary $186,477.",customer age (56) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 1 years ; holds only 1 banking product(s) ; aggregated complaint sentiment in this product/region cluster is -0.97,Age=56|shap=+1.6782 ; IsActiveMember=0|shap=+0.4294 ; Tenure=1|shap=-0.2523 ; NumOfProducts=1|shap=+0.1701 ; avg_sentiment=-0.9713419079780579|shap=+0.1535,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 56-year-old female from Spain, credit score 585, tenure 1 years, 1 product(s), has credit card, inactive member, balance $128,473, estimated salary $186,477.
+Top reasons they may churn (from SHAP):
+- customer age (56) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 1 years
+- holds only 1 banking product(s)
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear [Customer Name],
+
+We value your relationship with us and would like to ensure you are getting the most out of your experience as we continue to support your financial journey. Given your tenure, I would like to invite you to a complimentary financial review with one of our expert advisers to discuss your goals and explore how we can better tailor our services to your needs. We are also happy to conduct a fee waiver review and assess your eligibility for our no-fee credit card options. Please reply to this email or call us at [Phone Number] to schedule a convenient time for your consultation.",gemini-3.1-flash-lite
+P43,309,0.7234,1,France,"55-year-old female from France, credit score 530, tenure 4 years, 1 product(s), no credit card, active member, balance $120,905, estimated salary $123,476.",customer age (55) is in a band associated with elevated churn ; is an active member ; holds only 1 banking product(s) ; tenure of 4 years ; aggregated complaint sentiment in this product/region cluster is -0.97,Age=55|shap=+1.4782 ; IsActiveMember=1|shap=-0.3376 ; NumOfProducts=1|shap=+0.1953 ; Tenure=4|shap=-0.1642 ; avg_sentiment=-0.9745224714279175|shap=+0.1557,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 55-year-old female from France, credit score 530, tenure 4 years, 1 product(s), no credit card, active member, balance $120,905, estimated salary $123,476.
+Top reasons they may churn (from SHAP):
+- customer age (55) is in a band associated with elevated churn
+- is an active member
+- holds only 1 banking product(s)
+- tenure of 4 years
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate the trust you have placed in us over the past four years as an active member of our bank. Given your long-standing relationship, I would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current banking setup is working optimally for your goals. We would also be pleased to review your account for potential fee waivers and check your eligibility for our no-fee credit card options to better consolidate your financial needs. Please let us know a convenient time this week for a brief consultation, or simply reply to this email to schedule your appointment.",gemini-3.1-flash-lite
+P44,647,0.7225,1,Spain,"39-year-old female from Spain, credit score 591, tenure 3 years, 3 product(s), has credit card, inactive member, balance $0, estimated salary $140,469.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; customer age (39) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.97 ; account balance is zero,NumOfProducts=3|shap=+1.5459 ; dominant_topic=0|shap=+0.8129 ; Age=39|shap=-0.5179 ; avg_sentiment=-0.9715424180030823|shap=+0.4789 ; Balance=0.0|shap=-0.2791,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 39-year-old female from Spain, credit score 591, tenure 3 years, 3 product(s), has credit card, inactive member, balance $0, estimated salary $140,469.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- customer age (39) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- account balance is zero
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated having you with us over the past three years and would love the opportunity to better support your current financial goals. Given your profile, I would like to invite you to a complimentary financial review with one of our advisers to explore how we can optimize your existing products and simplify your banking experience. Please let us know a convenient time this week for a brief conversation so we can ensure our services are perfectly aligned with your needs.",gemini-3.1-flash-lite
+P45,197,0.7221,0,France,"67-year-old male from France, credit score 756, tenure 4 years, 3 product(s), has credit card, active member, balance $0, estimated salary $93,082.",holds only 3 banking product(s) ; the prevailing complaint theme in this cluster is topic 0 of the 10-topic model ; is an active member ; aggregated complaint sentiment in this product/region cluster is -0.98 ; customer age (67) is in a band associated with elevated churn,NumOfProducts=3|shap=+2.2521 ; dominant_topic=0|shap=+0.7538 ; IsActiveMember=1|shap=-0.6015 ; avg_sentiment=-0.9754924774169922|shap=+0.4286 ; Age=67|shap=-0.2765,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 67-year-old male from France, credit score 756, tenure 4 years, 3 product(s), has credit card, active member, balance $0, estimated salary $93,082.
+Top reasons they may churn (from SHAP):
+- holds only 3 banking product(s)
+- the prevailing complaint theme in this cluster is topic 0 of the 10-topic model
+- is an active member
+- aggregated complaint sentiment in this product/region cluster is -0.98
+- customer age (67) is in a band associated with elevated churn
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+As a loyal member of our bank for the past four years, we truly appreciate the trust you have placed in us. Given your tenure, I would like to invite you to a complimentary financial review with one of our senior advisers to ensure your current accounts are perfectly aligned with your long-term goals. We are also happy to conduct a fee waiver review and explore product consolidation options to simplify your banking experience. Please reply to this email or call us at your earliest convenience to schedule a time that works best for you.",gemini-3.1-flash-lite
+P46,1020,0.7209,1,Germany,"39-year-old female from Germany, credit score 627, tenure 5 years, 1 product(s), has credit card, inactive member, balance $124,587, estimated salary $93,133.",customer age (39) is in a band associated with elevated churn ; tenure of 5 years ; holds only 1 banking product(s) ; aggregated complaint severity in this cluster is 3.48/5 ; is currently flagged as inactive,Age=39|shap=-0.5383 ; Tenure=5|shap=-0.3077 ; NumOfProducts=1|shap=+0.2918 ; avg_severity=3.4751169681549072|shap=+0.1717 ; IsActiveMember=0|shap=+0.1187,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 39-year-old female from Germany, credit score 627, tenure 5 years, 1 product(s), has credit card, inactive member, balance $124,587, estimated salary $93,133.
+Top reasons they may churn (from SHAP):
+- customer age (39) is in a band associated with elevated churn
+- tenure of 5 years
+- holds only 1 banking product(s)
+- aggregated complaint severity in this cluster is 3.48/5
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have noticed that you have not utilized your account recently, and we would appreciate the opportunity to better support your financial goals after five years with our bank. We invite you to schedule a complimentary financial review with one of our advisers to discuss how we can better tailor our services to your needs, including potential product consolidation options. Please click the link below or reply to this message to book a time that is convenient for you.",gemini-3.1-flash-lite
+P47,1214,0.7126,0,Germany,"43-year-old male from Germany, credit score 634, tenure 3 years, 1 product(s), has credit card, inactive member, balance $212,696, estimated salary $115,269.",customer age (43) is in a band associated with elevated churn ; aggregated complaint sentiment in this product/region cluster is -0.97 ; holds only 1 banking product(s) ; tenure of 3 years ; is currently flagged as inactive,Age=43|shap=+0.3413 ; avg_sentiment=-0.9749612808227539|shap=+0.2419 ; NumOfProducts=1|shap=+0.2256 ; Tenure=3|shap=-0.2248 ; IsActiveMember=0|shap=+0.1990,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 43-year-old male from Germany, credit score 634, tenure 3 years, 1 product(s), has credit card, inactive member, balance $212,696, estimated salary $115,269.
+Top reasons they may churn (from SHAP):
+- customer age (43) is in a band associated with elevated churn
+- aggregated complaint sentiment in this product/region cluster is -0.97
+- holds only 1 banking product(s)
+- tenure of 3 years
+- is currently flagged as inactive
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear valued customer,
+
+We have noticed that you haven’t utilized your account recently, and we would appreciate the opportunity to better support your financial goals. Given your tenure with us, I would like to invite you to a complimentary financial review with one of our advisers to discuss how we can better align our services with your needs. We are also happy to conduct a fee waiver review and explore your eligibility for our no-fee credit card options. Please reply to this email or call us at your earliest convenience to schedule a brief consultation.",gemini-3.1-flash-lite
+P48,394,0.7107,0,Germany,"43-year-old female from Germany, credit score 613, tenure 4 years, 1 product(s), no credit card, active member, balance $140,682, estimated salary $20,134.",customer age (43) is in a band associated with elevated churn ; holds only 1 banking product(s) ; tenure of 4 years ; aggregated complaint severity in this cluster is 3.48/5 ; aggregated complaint sentiment in this product/region cluster is -0.97,Age=43|shap=+0.3110 ; NumOfProducts=1|shap=+0.2281 ; Tenure=4|shap=-0.2182 ; avg_severity=3.4751169681549072|shap=+0.1898 ; avg_sentiment=-0.9749612808227539|shap=+0.1801,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 43-year-old female from Germany, credit score 613, tenure 4 years, 1 product(s), no credit card, active member, balance $140,682, estimated salary $20,134.
+Top reasons they may churn (from SHAP):
+- customer age (43) is in a band associated with elevated churn
+- holds only 1 banking product(s)
+- tenure of 4 years
+- aggregated complaint severity in this cluster is 3.48/5
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate the trust you have placed in us over the past four years and would like to ensure you are getting the most out of your banking experience. As a dedicated member, you are eligible for a complimentary financial review with one of our advisers to help optimize your account and explore options tailored to your long-term goals. We would also be happy to conduct a no-fee credit card eligibility check to see how we can better support your financial needs. Please reply to this message or visit your local branch at your earliest convenience to schedule your personal consultation.",gemini-3.1-flash-lite
+P49,185,0.7034,1,France,"48-year-old male from France, credit score 598, tenure 6 years, 1 product(s), has credit card, inactive member, balance $120,683, estimated salary $30,636.",customer age (48) is in a band associated with elevated churn ; is currently flagged as inactive ; tenure of 6 years ; holds only 1 banking product(s) ; aggregated complaint sentiment in this product/region cluster is -0.97,Age=48|shap=+1.4210 ; IsActiveMember=0|shap=+0.3743 ; Tenure=6|shap=-0.3486 ; NumOfProducts=1|shap=+0.1909 ; avg_sentiment=-0.9745224714279175|shap=+0.1374,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 48-year-old male from France, credit score 598, tenure 6 years, 1 product(s), has credit card, inactive member, balance $120,683, estimated salary $30,636.
+Top reasons they may churn (from SHAP):
+- customer age (48) is in a band associated with elevated churn
+- is currently flagged as inactive
+- tenure of 6 years
+- holds only 1 banking product(s)
+- aggregated complaint sentiment in this product/region cluster is -0.97
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We have truly appreciated your six years of loyalty with us and would love to help you make the most of your banking experience. Given your long-standing relationship, I would like to invite you to a complimentary financial review with one of our advisers to explore how we can better support your goals and simplify your banking needs. This session is a great opportunity to discuss a fee waiver review or potential credit card benefits tailored to your current profile. Please reply to this email or call us at your earliest convenience to schedule a time that works best for you.",gemini-3.1-flash-lite
+P50,455,0.701,0,Germany,"46-year-old female from Germany, credit score 688, tenure 0 years, 1 product(s), no credit card, active member, balance $74,458, estimated salary $6,866.","customer age (46) is in a band associated with elevated churn ; current balance is $74,458 ; holds only 1 banking product(s) ; estimated annual salary of $6,866 ; is an active member",Age=46|shap=+0.8490 ; Balance=74458.25|shap=-0.2532 ; NumOfProducts=1|shap=+0.1993 ; EstimatedSalary=6866.31|shap=-0.1838 ; IsActiveMember=1|shap=-0.1776,"You are a senior customer-retention specialist at a retail bank. Write a short retention message (3-5 sentences) for the following customer.
+
+Customer profile: 46-year-old female from Germany, credit score 688, tenure 0 years, 1 product(s), no credit card, active member, balance $74,458, estimated salary $6,866.
+Top reasons they may churn (from SHAP):
+- customer age (46) is in a band associated with elevated churn
+- current balance is $74,458
+- holds only 1 banking product(s)
+- estimated annual salary of $6,866
+- is an active member
+
+Bank retention policy: Offers limited to: fee waiver review, no-fee credit card eligibility check, complimentary financial review with an adviser, and product consolidation. Do not promise specific monetary amounts, interest rates, or products the bank does not offer. Do not reference the customer's complaint history directly.
+
+Constraints: do not invent products the bank does not offer, do not promise specific monetary amounts, use a warm but professional tone. Address the customer politely (e.g., 'Dear ...'). End with a clear next-step call-to-action.","Dear Customer, we noticed you may be considering leaving. We value your business. Please contact us for special offers.","Dear Valued Customer,
+
+We truly appreciate having you with us and would like to ensure your banking experience is working as hard as you are. Given your active status and recent activity, I would like to invite you to a complimentary financial review with one of our advisers to discuss how we can better support your long-term goals. We are also happy to conduct a no-fee credit card eligibility check or review your account for potential fee waivers to maximize the value of your relationship with us. Please reply to this message or visit your local branch at your earliest convenience to schedule your personal consultation.",gemini-3.1-flash-lite

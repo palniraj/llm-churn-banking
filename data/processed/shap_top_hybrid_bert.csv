@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+Age,0.9820026
+avg_sentiment,0.72975975
+NumOfProducts,0.23856603
+Tenure,0.16843636
+avg_severity,0.0993304
+Balance,0.09887481
+bert_185,0.07841248
+bert_245,0.07323427
+EstimatedSalary,0.068532884
+bert_644,0.05559158
+bert_468,0.055431392
+bert_523,0.052244186
+bert_133,0.049110536
+bert_77,0.04693069
+bert_91,0.04416483
